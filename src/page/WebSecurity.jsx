@@ -63,7 +63,7 @@ const WebSecurity = () => {
                   sx={{
                     fontWeight: "bolder",
                     fontSize: "17px",
-                    color: "#021c40",
+                    color: "#2d5087",
                   }}
                 >
                   Web Security

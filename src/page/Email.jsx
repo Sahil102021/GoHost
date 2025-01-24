@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container, Typography, Grid2 } from "@mui/material";
-import Btn3 from "../componet/Btn3";
+import Btn1 from "../componet/Btn1";
 import Btn2 from "../componet/Btn2";
 import backgrond_1 from "../img/19742.png";
 import img1 from "../img/email-1.png";
@@ -30,12 +30,10 @@ import IconBtn from "../componet/IconBtn";
 const WebsiteBuild = () => {
   return (
     <div>
-      <Box
+       <Box
         width="100%"
         sx={{
-          color : "#fff",
-          backgroundColor:'#4e4feb',
-          // backgroundImage: `url(${backgrond_1})`,
+          backgroundImage: `url(${backgrond_1})`,
           backgroundSize: "cover", // Ensures proper background scaling
           backgroundPosition: "center",
         }}
@@ -52,7 +50,7 @@ const WebsiteBuild = () => {
             <Box
               sx={{
                 width: { xs: "100%", md: "50%" }, // Full width on small screens
-                padding: { xs: "5px", md: "50px 20px" }, // Reduced padding for smaller screens
+                padding: {xs :"5px",md:"50px 20px"}, // Reduced padding for smaller screens
               }}
             >
               <Box
@@ -69,7 +67,7 @@ const WebsiteBuild = () => {
                   sx={{
                     fontWeight: "bolder",
                     fontSize: "17px",
-                    color: "#fff",
+                    color: "#2d5087",
                   }}
                 >
                   Domain Emails
@@ -80,28 +78,29 @@ const WebsiteBuild = () => {
                     fontWeight: "bolder",
                     fontFamily: "sans-serif",
                     lineHeight: "1.2",
-                    color: "#fff",
+                    color: "#021c40",
                   }}
                 >
                   Professional {" "}
                   <Box
                     sx={{
                       display: "inline",
-                      color: "#27E1C1",
+                      color: "#4e4feb",
                     }}
                   >
-                    Business  
+                    Business 
                   </Box>{" "}
-                  Email                </Box>
+                  PEmail
+                </Box>
                 <Typography
                   variant="subtitle1"
-                  color="#fff"
+                  color="#042c66"
                   sx={{
                     marginBottom: "20px",
                     fontSize: { xs: "14px", sm: "16px" },
                   }}
                 >
-                  Answer a few questions and get a customizable site up and running fast
+                  Having an email address that aligns with your custom domain enhances the credibility of your brand.
                 </Typography>
                 <Box
                   sx={{
@@ -110,35 +109,23 @@ const WebsiteBuild = () => {
                     flexWrap: "wrap", // Allows buttons to stack
                   }}
                 >
-                  <Btn3 text="Start for free"></Btn3>
+                  <Btn1 text="Choose A Plan" />
+                  <Btn2 text="Webmail Login" />
                 </Box>
                 <Box
-                  sx={{
-                    display: "flex",
-                    gap: "30px",
-                    marginTop: "20px",
-                    flexWrap: "wrap", // Allows stats to stack
-                  }}
-                >
-                  {[{ count: "1M+", label: "No credit card required.*" }].map(
-                    (item, index) => (
-                      <Box key={index}>
-                        <Typography
-                          variant="subtitle1"
-                          color="#fff"
-                          sx={{
-                            fontWeight: "bold",
-                          }}
-                        >
-                          {item.count}
-                        </Typography>
-                        <Typography variant="subtitle2" color="#fff">
-                          {item.label}
-                        </Typography>
-                      </Box>
-                    )
-                  )}
-                </Box>
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "20px",
+                }}
+              >
+                <img
+                  src={listImg}
+                  alt="Expert Hosting Help"
+                  style={{ width: "115px" }}
+                />
+                
+              </Box>
               </Box>
             </Box>
 
@@ -154,6 +141,30 @@ const WebsiteBuild = () => {
               }}
             >
               <img src={img1} alt="Main visual" style={{ width: "90%" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "20px",
+                }}
+              >
+                <img
+                  src={listImg}
+                  alt="Expert Hosting Help"
+                  style={{ width: "115px" }}
+                />
+                <Typography
+                  sx={{
+                    display: "inline-block",
+                    color: "#021c40",
+                    fontWeight: "bold",
+                    paddingLeft: "10px",
+                    textAlign: "left",
+                  }}
+                >
+                  Expert Hosting <br /> Help
+                </Typography>
+              </Box>
             </Box>
           </Box>
         </Container>

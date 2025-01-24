@@ -41,9 +41,10 @@ const Footer = () => {
                 <li
                   style={{
                     paddingBottom: "10px",
-                    fontSize: "17px",
+                    fontSize: "20px",
                     fontWeight: "bold",
                     color: "#fff",
+                    fontFamily:'monospace'
                   }}
                 >
                   {title}
@@ -54,7 +55,6 @@ const Footer = () => {
                   "Our Blog",
                   "Investor Relations",
                   "Careers",
-                  "343",
                 ].map((item, idx) => (
                   <li key={idx} style={{ margin: "5px 0" }}>
                     <Typography color='#DDDDDD' sx={{fontSize : '14px'}}>{item}</Typography>
